@@ -2,9 +2,10 @@ using AutoFixture;
 using Moq;
 using CarrinhoCompras.BLL.Contracts;
 using CarrinhoCompras.BLL.Models;
-using CarrinhoCompras.DAL.MySql.Contract;
-using CarrinhoCompras.DAL.MySql.Models;
+using CarrinhoCompras.DAL.SQL.Interfaces;
+using CarrinhoCompras.DAL.SQL.Models;
 using System;
+using CarrinhoCompras.DAL.SQL.Interfaces;
 
 namespace CarrinhoCompras.BLL.Tests.Helpers
 {

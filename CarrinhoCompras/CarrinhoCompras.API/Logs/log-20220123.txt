@@ -1,0 +1,483 @@
+2022-01-23 19:00:18.757 -03:00 [Information] web api service is started.
+2022-01-23 19:00:19.663 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 193.9812 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 19:00:20.191 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 197.4524 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 19:00:36.937 -03:00 [Information] HTTP "GET" "/api/token/generate" responded 200 in 191.5865 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 19:00:53.560 -03:00 [Information] HTTP "GET" "/api/token/generate" responded 200 in 41.8526 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 19:01:10.939 -03:00 [Information] HTTP "GET" "/api/v1/cars" responded 401 in 31.8070 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 19:01:12.007 -03:00 [Information] HTTP "GET" "/api/v1/cars" responded 401 in 11.6117 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 19:01:13.658 -03:00 [Information] HTTP "GET" "/api/v1/cars" responded 401 in 13.7081 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 19:27:05.452 -03:00 [Information] web api service is started.
+2022-01-23 19:27:06.315 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 189.7721 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 19:27:07.576 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 172.6481 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 19:29:11.367 -03:00 [Information] HTTP "GET" "/api/token/generate" responded 200 in 122.3490 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 19:29:24.592 -03:00 [Error] HTTP "GET" "/api/v1/cars" responded 500 in 3739.4466 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Connection": "Keep-Alive"), ("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkdCI6IjIwMjItMDEtMjNUMjI6Mjk6MTFaIiwibmJmIjoxNjQyOTc2OTUxLCJleHAiOjE2NDU2NTUzNTEsImlhdCI6MTY0Mjk3Njk1MX0.h5K0hTEX-35pMueE58qDczOKFF3hLDh2U8xrh-qpKdw"), ("Host": "localhost:51780"), ("User-Agent": "PostmanRuntime/7.28.4"), ("Postman-Token": "0ce35d68-c3e2-419e-8a78-b482b4cfeb6c"), ("MS-ASPNETCORE-TOKEN": "e56767ad-d75b-4486-bb3d-1c71e504b95c"), ("X-Original-Proto": "http"), ("X-Original-For": "127.0.0.1:53320")]]
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)<---
+
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CarrinhoCompras.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Middlewares\HttpContextMiddleware.cs:line 40
+2022-01-23 19:29:31.162 -03:00 [Error] HTTP "GET" "/api/v1/cars" responded 500 in 2152.3922 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Connection": "Keep-Alive"), ("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkdCI6IjIwMjItMDEtMjNUMjI6Mjk6MTFaIiwibmJmIjoxNjQyOTc2OTUxLCJleHAiOjE2NDU2NTUzNTEsImlhdCI6MTY0Mjk3Njk1MX0.h5K0hTEX-35pMueE58qDczOKFF3hLDh2U8xrh-qpKdw"), ("Host": "localhost:51780"), ("User-Agent": "PostmanRuntime/7.28.4"), ("Postman-Token": "149de7e8-c763-4a89-8db5-f30aa39deb25"), ("MS-ASPNETCORE-TOKEN": "e56767ad-d75b-4486-bb3d-1c71e504b95c"), ("X-Original-Proto": "http"), ("X-Original-For": "127.0.0.1:53320")]]
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)<---
+
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CarrinhoCompras.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Middlewares\HttpContextMiddleware.cs:line 40
+2022-01-23 19:29:37.163 -03:00 [Information] HTTP "GET" "/v1/cars" responded 404 in 0.2882 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"PostmanRuntime/7.28.4"]
+2022-01-23 19:29:43.735 -03:00 [Information] HTTP "GET" "/v1/cars" responded 404 in 0.1017 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"PostmanRuntime/7.28.4"]
+2022-01-23 19:29:48.183 -03:00 [Information] HTTP "GET" "/cars" responded 404 in 0.0622 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"PostmanRuntime/7.28.4"]
+2022-01-23 19:59:53.415 -03:00 [Information] HTTP "GET" "/" responded 404 in 0.0789 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"PostmanRuntime/7.28.4"]
+2022-01-23 20:00:15.492 -03:00 [Information] HTTP "GET" "/swagger" responded 301 in 0.4407 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"PostmanRuntime/7.28.4"]
+2022-01-23 20:00:15.502 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 0.6163 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger"][User-Agent:"PostmanRuntime/7.28.4"]
+2022-01-23 20:00:27.004 -03:00 [Information] HTTP "GET" "/api/v1/cars" responded 401 in 21.0768 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:00:43.973 -03:00 [Error] HTTP "GET" "/api/v1/cars" responded 500 in 2167.3521 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Connection": "Keep-Alive"), ("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkdCI6IjIwMjItMDEtMjNUMjI6Mjk6MTFaIiwibmJmIjoxNjQyOTc2OTUxLCJleHAiOjE2NDU2NTUzNTEsImlhdCI6MTY0Mjk3Njk1MX0.h5K0hTEX-35pMueE58qDczOKFF3hLDh2U8xrh-qpKdw"), ("Host": "localhost:51780"), ("User-Agent": "PostmanRuntime/7.28.4"), ("Postman-Token": "f957b865-8436-40d3-8040-4cf196e77858"), ("MS-ASPNETCORE-TOKEN": "e56767ad-d75b-4486-bb3d-1c71e504b95c"), ("X-Original-Proto": "http"), ("X-Original-For": "127.0.0.1:53378")]]
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)<---
+
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CarrinhoCompras.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Middlewares\HttpContextMiddleware.cs:line 40
+2022-01-23 20:01:37.977 -03:00 [Information] web api service is started.
+2022-01-23 20:01:38.787 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 182.5904 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:01:39.104 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 172.6334 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:01:54.962 -03:00 [Information] HTTP "GET" "/api/token/generate" responded 200 in 114.0312 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:02:11.555 -03:00 [Error] HTTP "GET" "/api/v1/cars" responded 500 in 2732.5859 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Connection": "Keep-Alive"), ("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkdCI6IjIwMjItMDEtMjNUMjM6MDE6NTRaIiwibmJmIjoxNjQyOTc4OTE0LCJleHAiOjE2NDU2NTczMTQsImlhdCI6MTY0Mjk3ODkxNH0.VdfHlRCwu7AMEfOVw5YLvQ0Wj-gV_59OyIkZMzrS4d4"), ("Host": "localhost:51780"), ("User-Agent": "PostmanRuntime/7.28.4"), ("Postman-Token": "bb292658-420c-4fdf-90b1-9f76fed1b9cb"), ("MS-ASPNETCORE-TOKEN": "5934f1f7-2612-446e-9ccc-cc1c7c8dade4"), ("X-Original-Proto": "http"), ("X-Original-For": "127.0.0.1:53398")]]
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)<---
+
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CarrinhoCompras.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Middlewares\HttpContextMiddleware.cs:line 40
+2022-01-23 20:02:37.835 -03:00 [Information] HTTP "GET" "/api/token/generate" responded 200 in 11.2814 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:02:47.397 -03:00 [Error] HTTP "GET" "/api/v1/cars" responded 500 in 2170.2055 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Connection": "Keep-Alive"), ("Accept": "application/json"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"), ("Cookie": ".AspNetCore.Antiforgery.CubOFMKinTI=CfDJ8PSpqGcKSvxAoFSiL7dajl0p0JxdzW0t0dWmCAMkQVaPMlTZJ32qKu-RRMG_EO7odTw7BYjzs0jBqOmGq9QiUMwhHQaFkIBKuYvSVjE0CzSkD4EGZjBvanGhPeiWAmUX9aRegZ8l29Hu2Gd-dk4UX04"), ("Host": "localhost:51780"), ("Referer": "http://localhost:51780/swagger/index.html"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"), ("sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"97\", \"Chromium\";v=\"97\""), ("sec-ch-ua-mobile": "?0"), ("sec-ch-ua-platform": "\"Windows\""), ("Sec-Fetch-Site": "same-origin"), ("Sec-Fetch-Mode": "cors"), ("Sec-Fetch-Dest": "empty"), ("MS-ASPNETCORE-TOKEN": "5934f1f7-2612-446e-9ccc-cc1c7c8dade4"), ("X-Original-Proto": "http"), ("X-Original-For": "127.0.0.1:53398")]]
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)<---
+
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CarrinhoCompras.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Middlewares\HttpContextMiddleware.cs:line 40
+2022-01-23 20:03:31.011 -03:00 [Information] web api service is started.
+2022-01-23 20:03:31.986 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 183.1667 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:03:32.310 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 180.8191 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:03:40.549 -03:00 [Information] HTTP "GET" "/api/token/generate" responded 200 in 111.3878 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:03:41.681 -03:00 [Information] HTTP "GET" "/api/token/generate" responded 200 in 14.3452 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:04:04.351 -03:00 [Error] HTTP "GET" "/api/v1/cars" responded 500 in 2743.4039 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Connection": "Keep-Alive"), ("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkdCI6IjIwMjItMDEtMjNUMjM6MDM6NDFaIiwibmJmIjoxNjQyOTc5MDIxLCJleHAiOjE2NDU2NTc0MjEsImlhdCI6MTY0Mjk3OTAyMX0.32vqQiJ4ZYBgGZJX8mhYpv0dOKWfncosYshBqQlYSJo"), ("Host": "localhost:51780"), ("User-Agent": "PostmanRuntime/7.28.4"), ("Postman-Token": "742fd62e-ca4d-4b55-9455-4212187b978e"), ("MS-ASPNETCORE-TOKEN": "be3c0853-93bd-4e64-89f9-62715ea9b8db"), ("X-Original-Proto": "http"), ("X-Original-For": "127.0.0.1:53416")]]
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)<---
+
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CarrinhoCompras.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Middlewares\HttpContextMiddleware.cs:line 40
+2022-01-23 20:14:38.238 -03:00 [Information] web api service is started.
+2022-01-23 20:14:41.408 -03:00 [Error] HTTP "GET" "/api/v1/cars" responded 500 in 2508.7973 ms [User:null][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Connection": "Keep-Alive"), ("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkdCI6IjIwMjItMDEtMjNUMjM6MDM6NDFaIiwibmJmIjoxNjQyOTc5MDIxLCJleHAiOjE2NDU2NTc0MjEsImlhdCI6MTY0Mjk3OTAyMX0.32vqQiJ4ZYBgGZJX8mhYpv0dOKWfncosYshBqQlYSJo"), ("Host": "localhost:51780"), ("User-Agent": "PostmanRuntime/7.28.4"), ("Postman-Token": "c6e6adea-5360-4e49-8de2-7c91556e1d6f"), ("MS-ASPNETCORE-TOKEN": "45a55a70-998e-419f-a32f-c0ed6baa9198"), ("X-Original-Proto": "http"), ("X-Original-For": "127.0.0.1:53450")]]
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: One or more errors occurred. (Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306) ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Inner Exception #0) System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:3306
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+   at System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)<---
+
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CarrinhoCompras.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Middlewares\HttpContextMiddleware.cs:line 40
+2022-01-23 20:14:50.179 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 39.1560 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:14:50.507 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 168.8837 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:14:56.451 -03:00 [Information] HTTP "GET" "/api/v1/cars" responded 401 in 23.8357 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:15:16.793 -03:00 [Information] HTTP "GET" "/api/v1/cars" responded 401 in 12.6850 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:15:17.678 -03:00 [Information] HTTP "GET" "/api/v1/cars" responded 401 in 11.2876 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:19:05.499 -03:00 [Information] HTTP "GET" "/api/token/generate" responded 200 in 44.3151 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:19:37.682 -03:00 [Information] HTTP "GET" "/api/v1/cars" responded 401 in 17.7864 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:20:07.006 -03:00 [Information] HTTP "GET" "/api/v1/cars" responded 401 in 11.9846 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 20:27:48.253 -03:00 [Information] HTTP "GET" "/api/v1/cars" responded 401 in 12.2481 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"PostmanRuntime/7.29.0"]
+2022-01-23 22:28:04.931 -03:00 [Information] web api service is started.
+2022-01-23 22:28:05.811 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 201.2865 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-23 22:28:06.335 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 170.1110 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]

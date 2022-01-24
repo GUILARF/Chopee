@@ -4,7 +4,7 @@
         <name>CarrinhoCompras.API</name>
     </assembly>
     <members>
-        <member name="M:CarrinhoCompras.API.Controllers.CarsController.#ctor(AutoMapper.IMapper,Service.BLL.Contracts.ICarsService)">
+        <member name="M:CarrinhoCompras.API.Controllers.CarsController.#ctor(AutoMapper.IMapper,CarrinhoCompras.BLL.Contracts.ICarsService)">
             <summary>
             Cars db api
             </summary>
@@ -48,7 +48,7 @@
             <param name="pageSize">Page size</param>
             <returns></returns>
         </member>
-        <member name="M:CarrinhoCompras.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,Service.BLL.TodosMockProxyService)">
+        <member name="M:CarrinhoCompras.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,CarrinhoCompras.BLL.TodosMockProxyService)">
             <summary>
             Todos mock web proxy 
             </summary>

@@ -1,8 +1,8 @@
 using AutoMapper;
 using CarrinhoCompras.BLL.Contracts;
 using CarrinhoCompras.BLL.Models;
-using CarrinhoCompras.DAL.MySql.Contract;
-using CarrinhoCompras.DAL.MySql.Models;
+using CarrinhoCompras.DAL.SQL.Interfaces;
+using CarrinhoCompras.DAL.SQL.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

@@ -9,10 +9,11 @@ using Polly;
 using CarrinhoCompras.BLL;
 using CarrinhoCompras.BLL.Contracts;
 using CarrinhoCompras.BLL.Models;
-using CarrinhoCompras.DAL.MySql;
-using CarrinhoCompras.DAL.MySql.Contract;
+using CarrinhoCompras.DAL.SQL;
+using CarrinhoCompras.DAL.SQL.Interfaces;
 using System;
 using System.Linq;
+using CarrinhoCompras.DAL.SQL.Models;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -36,7 +37,7 @@ namespace Microsoft.Extensions.DependencyInjection
             var bllSettings = BLLOptionsSection.Get<CarsBLLOptions>();
 
             services.Configure<CarsBLLOptions>(BLLOptionsSection);
-            services.Configure<CarsMySqlRepositoryOption>(DALOptionSection);
+            services.Configure<CarsSqlRepositoryOptions>(DALOptionSection);
 
             services.TryAddSingleton<ICarsRepository, CarsRepository>();
 

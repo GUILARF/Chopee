@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CarrinhoCompras.DAL.MySql\CarrinhoCompras.DAL.MySql.csproj" />
+    <ProjectReference Include="..\..\CarrinhoCompras.DAL.SQL\CarrinhoCompras.DAL.SQL.csproj" />
   </ItemGroup>
 
 </Project>

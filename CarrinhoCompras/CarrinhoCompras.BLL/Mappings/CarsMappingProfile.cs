@@ -1,6 +1,6 @@
 using AutoMapper;
 using CarrinhoCompras.BLL.Models;
-using CarrinhoCompras.DAL.MySql.Models;
+using CarrinhoCompras.DAL.SQL.Models;
 using System;
 
 namespace CarrinhoCompras.BLL.Mappings

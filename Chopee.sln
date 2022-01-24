@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarrinhoCompras.BLL", "Carr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarrinhoCompras.Configuration", "CarrinhoCompras\CarrinhoCompras.Configuration\CarrinhoCompras.Configuration.csproj", "{7EE0BC68-E7B6-4F9C-8911-860F351EFE88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarrinhoCompras.DAL.MySql", "CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarrinhoCompras.DAL.MySql.csproj", "{45C8F05D-B753-4B82-BB87-C72A55D85335}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3F1D5182-9FEE-4BE1-B3EF-8131C3D6EFE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarrinhoCompras.BLL.Tests", "CarrinhoCompras\CarrinhoCompras.BLL.Tests\CarrinhoCompras.BLL.Tests.csproj", "{526E19CE-3CB0-4288-854A-08D23AA77708}"
@@ -20,6 +18,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DbUp", "DbUp", "{29104AB6-A6D0-45BA-AE81-7D37CBA42251}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarrinhoCompras.DbUp.MySql", "CarrinhoCompras\CarrinhoCompras.DbUp.MySql\CarrinhoCompras.DbUp.MySql.csproj", "{A6F8A120-41B8-4D79-B9DD-A0CAC4BCE81D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarrinhoCompras.DAL.SQL", "CarrinhoCompras.DAL.SQL\CarrinhoCompras.DAL.SQL.csproj", "{3F3AE2CD-BCAA-49F3-B097-07B8A7A5B70D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +43,6 @@ Global
 		{7EE0BC68-E7B6-4F9C-8911-860F351EFE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EE0BC68-E7B6-4F9C-8911-860F351EFE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EE0BC68-E7B6-4F9C-8911-860F351EFE88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45C8F05D-B753-4B82-BB87-C72A55D85335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45C8F05D-B753-4B82-BB87-C72A55D85335}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45C8F05D-B753-4B82-BB87-C72A55D85335}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45C8F05D-B753-4B82-BB87-C72A55D85335}.Release|Any CPU.Build.0 = Release|Any CPU
 		{526E19CE-3CB0-4288-854A-08D23AA77708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{526E19CE-3CB0-4288-854A-08D23AA77708}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{526E19CE-3CB0-4288-854A-08D23AA77708}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,6 +51,10 @@ Global
 		{A6F8A120-41B8-4D79-B9DD-A0CAC4BCE81D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6F8A120-41B8-4D79-B9DD-A0CAC4BCE81D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6F8A120-41B8-4D79-B9DD-A0CAC4BCE81D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F3AE2CD-BCAA-49F3-B097-07B8A7A5B70D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3AE2CD-BCAA-49F3-B097-07B8A7A5B70D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3AE2CD-BCAA-49F3-B097-07B8A7A5B70D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3AE2CD-BCAA-49F3-B097-07B8A7A5B70D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
