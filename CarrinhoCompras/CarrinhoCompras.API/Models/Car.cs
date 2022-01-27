@@ -3,33 +3,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CarrinhoCompras.API.Models
 {
-    /// <summary>
-    /// Car type
-    /// </summary>
-    public class Car
+    public class Product
     {
-        /// <summary>
-        /// Car id
-        /// </summary>
         public Guid Id { get; set; }
-        /// <summary>
-        /// Car model name
-        /// </summary>
         [Required]
         [StringLength(45, MinimumLength = 1)]
-        public string ModelName { get; set; }
-        /// <summary>
-        /// Car type
-        /// </summary>
+        public string Name { get; set; }
         [Required]
-        public CarType CarType { get; set; }
-        /// <summary>
-        /// CreatedOn
-        /// </summary>
+        public ProductType Type { get; set; }
         public DateTime CreatedOn { get; set; }
-        /// <summary>
-        /// ModifiedOn
-        /// </summary>
         public DateTime ModifiedOn { get; set; }
     }
 }

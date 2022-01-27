@@ -37,11 +37,11 @@ namespace Microsoft.Extensions.DependencyInjection
             var bllSettings = BLLOptionsSection.Get<CarsBLLOptions>();
 
             services.Configure<CarsBLLOptions>(BLLOptionsSection);
-            services.Configure<CarsSqlRepositoryOptions>(DALOptionSection);
+            services.Configure<ProductsSqlRepositoryOptions>(DALOptionSection);
 
-            services.TryAddSingleton<ICarsRepository, CarsRepository>();
+            services.TryAddSingleton<IProductsRepository, ProductsRepository>();
 
-            services.TryAddScoped<ICarsService, CarsService>();
+            services.TryAddScoped<IProductsService, ProductService>();
             services.TryAddScoped<IJwtTokenService, JwtTokenService>();
 
             services.AddHttpClient();
@@ -53,7 +53,7 @@ namespace Microsoft.Extensions.DependencyInjection
             );
 
             services.AddHealthChecks()
-                .AddCheck<CarsRepository>("CarsRepository")
+                .AddCheck<ProductsRepository>("CarsRepository")
                 .AddCheck<TodosMockProxyService>("TodosMockProxyService");
 
             return services;

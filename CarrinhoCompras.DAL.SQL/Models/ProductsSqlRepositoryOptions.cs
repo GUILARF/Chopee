@@ -4,8 +4,8 @@ using System.Text;
 
 namespace CarrinhoCompras.DAL.SQL.Models
 {
-    public class CarsSqlRepositoryOptions
+    public class ProductsSqlRepositoryOptions
     {
-        public string CarsDbConnectionString { get; set; }
+        public string ProductsDbConnectionString { get; set; }
     }
 }

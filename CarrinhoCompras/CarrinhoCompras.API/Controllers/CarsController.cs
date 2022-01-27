@@ -15,128 +15,128 @@ namespace CarrinhoCompras.API.Controllers
 {
     [Authorize]
     [Produces("application/json")]
-    [Route("api/v{version:apiVersion}/cars")]
+    [Route("api/v{version:apiVersion}/products")]
     [ApiVersion("1.0")]
     [ApiController]
-    public class CarsController : ControllerBase
+    public class ProductController : ControllerBase
     {
         private readonly IMapper _mapper;
-        private readonly ICarsService _carsService;
+        private readonly IProductsService _productsService;
 
         /// <summary>
-        /// Cars db api
+        /// products db api
         /// </summary>
         /// <param name="mapper"></param>
-        /// <param name="carsService"></param>
-        public CarsController(IMapper mapper, ICarsService carsService)
+        /// <param name="productsService"></param>
+        public ProductController(IMapper mapper, IProductsService productsService)
         {
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
-            _carsService = carsService ?? throw new ArgumentNullException(nameof(carsService));
+            _productsService = productsService ?? throw new ArgumentNullException(nameof(productsService));
         }
 
         /// <summary>
-        /// Create a new car
+        /// Create a new product
         /// </summary>
-        /// <param name="car"></param>
-        /// <returns>Returns created car</returns>           
+        /// <param name="product"></param>
+        /// <returns>Returns created product</returns>           
         [HttpPost("")]
-        [SwaggerResponseExample((int)HttpStatusCode.Created, typeof(CarModelExample))]
-        [SwaggerResponse((int)HttpStatusCode.Created, Type = typeof(Car), Description = "Returns created car")]
+        [SwaggerResponseExample((int)HttpStatusCode.Created, typeof(ProductModelExample))]
+        [SwaggerResponse((int)HttpStatusCode.Created, Type = typeof(Product), Description = "Returns created product")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> CreateCarAsync([FromBody] Car car)
+        public async Task<IActionResult> CreateproductAsync([FromBody] Product product)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
 
-            var result = await _carsService.CreateCarAsync(_mapper.Map<BLL.Models.Car>(car));
-            return Created($"{result.Id}", _mapper.Map<Car>(result));
+            var result = await _productsService.CreateProductAsync(_mapper.Map<BLL.Models.Product>(product));
+            return Created($"{result.Id}", _mapper.Map<Product>(result));
         }
 
         /// <summary>
-        /// Get car by id
+        /// Get product by id
         /// </summary>
-        /// <param name="id">Car Id</param>
-        /// <returns>Returns finded car</returns>
+        /// <param name="id">product Id</param>
+        /// <returns>Returns finded product</returns>
         [HttpGet("{id}")]
-        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(Car), Description = "Returns finded car")]
-        [SwaggerResponseExample((int)HttpStatusCode.OK, typeof(CarModelExample))]
-        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid car id")]
+        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(Product), Description = "Returns finded product")]
+        [SwaggerResponseExample((int)HttpStatusCode.OK, typeof(ProductModelExample))]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid product id")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> GetCarAsync([FromRoute] Guid id)
+        public async Task<IActionResult> GetproductAsync([FromRoute] Guid id)
         {
             if (id == Guid.Empty)
             {
                 return BadRequest();
             }
 
-            var result = await _carsService.GetCarAsync(id);
-            return Ok(_mapper.Map<Car>(result));
+            var result = await _productsService.GetProductAsync(id);
+            return Ok(_mapper.Map<Product>(result));
         }
 
         /// <summary>
-        /// Update existing car
+        /// Update existing product
         /// </summary>
-        /// <param name="id">Car id</param>
-        /// <param name="car">Car parameters</param>
+        /// <param name="id">product id</param>
+        /// <param name="product">product parameters</param>
         /// <returns></returns>
         [HttpPut("{id}")]
-        [SwaggerRequestExample(typeof(Car), typeof(CarModelExample))]
+        [SwaggerRequestExample(typeof(Product), typeof(ProductModelExample))]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
-        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid car object")]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid product object")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> UpdateCarAsync([FromRoute] Guid id, [FromBody] Car car)
+        public async Task<IActionResult> UpdateproductAsync([FromRoute] Guid id, [FromBody] Product product)
         {
             if (id == Guid.Empty || !ModelState.IsValid)
             {
                 return BadRequest();
             }
 
-            car.Id = id;
-            var result = await _carsService.UpdateCarAsync(_mapper.Map<BLL.Models.Car>(car));
+            product.Id = id;
+            var result = await _productsService.UpdateProductAsync(_mapper.Map<BLL.Models.Product>(product));
             return Ok();
         }
 
         /// <summary>
-        /// Delete car
+        /// Delete product
         /// </summary>
-        /// <param name="id">Car id</param>
+        /// <param name="id">product id</param>
         /// <returns></returns>
         [HttpDelete("{id}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
-        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid car id")]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid product id")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> DeleteCarAsync([FromRoute] Guid id)
+        public async Task<IActionResult> DeleteproductAsync([FromRoute] Guid id)
         {
             if (id == Guid.Empty)
             {
                 return BadRequest();
             }
 
-            var result = await _carsService.DeleteCarAsync(id);
+            var result = await _productsService.DeleteProductAsync(id);
             return Ok();
         }
 
         /// <summary>
-        /// Get cars list
+        /// Get products list
         /// </summary>
         /// <param name="pageNumber">Page number</param>
         /// <param name="pageSize">Page size</param>
         /// <returns></returns>
         [HttpGet("")]
-        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(IEnumerable<Car>), Description = "Returns finded cars array")]
+        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(IEnumerable<Product>), Description = "Returns finded products array")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid pageNumber or pageSize")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> GetCarsListAsync([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 50)
+        public async Task<IActionResult> GetproductsListAsync([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 50)
         {
             if (pageNumber == 0 || pageSize == 0)
             {
                 return BadRequest();
             }
 
-            var result = await _carsService.GetCarsListAsync(pageNumber, pageSize);
-            return Ok(_mapper.Map<IEnumerable<Car>>(result));
+            var result = await _productsService.GetProductsListAsync(pageNumber, pageSize);
+            return Ok(_mapper.Map<IEnumerable<Product>>(result));
         }
     }
 }

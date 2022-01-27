@@ -5,42 +5,42 @@ using System.Threading.Tasks;
 
 namespace CarrinhoCompras.BLL.Contracts
 {
-    public interface ICarsService
+    public interface IProductsService
     {
         /// <summary>
         /// Create a new car
         /// </summary>
-        /// <param name="car"></param>
+        /// <param name="Product"></param>
         /// <returns></returns>
-        Task<Car> CreateCarAsync(Car car);
+        Task<Product> CreateProductAsync(Product Product);
 
         /// <summary>
-        /// Get car by id
+        /// Get Product by id
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        Task<Car> GetCarAsync(Guid id);
+        Task<Product> GetProductAsync(Guid id);
 
         /// <summary>
-        /// Update car parameters
+        /// Update Product parameters
         /// </summary>
-        /// <param name="car"></param>
+        /// <param name="Product"></param>
         /// <returns></returns>
-        Task<bool> UpdateCarAsync(Car car);
+        Task<bool> UpdateProductAsync(Product Product);
 
         /// <summary>
-        /// Delete car by id
+        /// Delete Product by id
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        Task<bool> DeleteCarAsync(Guid id);
+        Task<bool> DeleteProductAsync(Guid id);
 
         /// <summary>
-        /// Get cars list 
+        /// Get Products list 
         /// </summary>
         /// <param name="pageNumber"></param>
         /// <param name="pageSize"></param>
         /// <returns></returns>
-        Task<IEnumerable<Car>> GetCarsListAsync(int pageNumber, int pageSize);
+        Task<IEnumerable<Product>> GetProductsListAsync(int pageNumber, int pageSize);
     }
 }

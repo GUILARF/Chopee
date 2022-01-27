@@ -49,9 +49,9 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of 
    at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
 --- End of stack trace from previous location where exception was thrown ---
    at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
-   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
-   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
-   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -112,9 +112,9 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of 
    at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
 --- End of stack trace from previous location where exception was thrown ---
    at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
-   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
-   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
-   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -182,9 +182,9 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of 
    at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
 --- End of stack trace from previous location where exception was thrown ---
    at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
-   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
-   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
-   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -249,9 +249,9 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of 
    at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
 --- End of stack trace from previous location where exception was thrown ---
    at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
-   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
-   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
-   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -313,9 +313,9 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of 
    at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
 --- End of stack trace from previous location where exception was thrown ---
    at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
-   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
-   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
-   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -381,9 +381,9 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of 
    at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
 --- End of stack trace from previous location where exception was thrown ---
    at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
-   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
-   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
-   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -445,9 +445,9 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of 
    at System.Data.Common.DbConnection.OpenAsync(CancellationToken cancellationToken)
 --- End of stack trace from previous location where exception was thrown ---
    at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
-   at CarrinhoCompras.DAL.MySql.CarsRepository.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
-   at CarrinhoCompras.BLL.CarsService.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
-   at CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
+   at CarrinhoCompras.DAL.MySql.CarsRepository.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.DAL.MySql\CarsRepository.cs:line 113
+   at CarrinhoCompras.BLL.CarsService.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\CarsService.cs:line 44
+   at CarrinhoCompras.API.Controllers.CarsController.GetProductsListAsync(Int32 pageNumber, Int32 pageSize) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\CarsController.cs:line 138
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()

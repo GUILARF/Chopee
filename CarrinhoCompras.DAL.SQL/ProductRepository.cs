@@ -12,50 +12,50 @@ using System.Threading.Tasks;
 
 namespace CarrinhoCompras.DAL.SQL
 {
-    public class CarsRepository: ICarsRepository, IHealthCheck
+    public class ProductsRepository: IProductsRepository, IHealthCheck
     {
-        private readonly IOptionsMonitor<CarsSqlRepositoryOptions> _options;
+        private readonly IOptionsMonitor<ProductsSqlRepositoryOptions> _options;
 
-        public CarsRepository(IOptionsMonitor<CarsSqlRepositoryOptions> options)
+        public ProductsRepository(IOptionsMonitor<ProductsSqlRepositoryOptions> options)
         {
             _options = options;
         }
 
-        public async Task<CarEntity> CreateCarAsync(CarEntity newCar)
+        public async Task<ProductEntity> CreateProductAsync(ProductEntity newProduct)
         {
-            //if (newCar.Id == Guid.Empty.ToString())
+            //if (newProduct.Id == Guid.Empty.ToString())
             //{
-            //    newCar.Id = Guid.NewGuid().ToString();
+            //    newProduct.Id = Guid.NewGuid().ToString();
             //}
             var dnow = DateTime.UtcNow;
-            newCar.CreatedOn = dnow;
-            newCar.ModifiedOn = dnow;
-            newCar.CarType = 1;
+            newProduct.CreatedOn = dnow;
+            newProduct.ModifiedOn = dnow;
+            newProduct.Type = 1;
 
-            const string sqlQuery = @"INSERT INTO cars (
+            const string sqlQuery = @"INSERT INTO products (
                     
                     modelname,
-                    cartype,
+                    type,
                     createdon,
                     modifiedon
                 )
                 VALUES (
                     
                     @modelname,
-                    @cartype,
+                    @type,
                     @createdon,
                     @modifiedon);";
 
-            using (var con = new SqlConnection(_options.CurrentValue.CarsDbConnectionString))
+            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
             {
-                //await db.(sqlQuery, newCar, commandType: CommandType.Text);
-                //return newCar;
+                //await db.(sqlQuery, newProduct, commandType: CommandType.Text);
+                //return newProduct;
 
                 try
                 {
                     con.Open();
-                    await con.ExecuteAsync(sqlQuery, newCar, commandType: CommandType.Text);
-                    return newCar;
+                    await con.ExecuteAsync(sqlQuery, newProduct, commandType: CommandType.Text);
+                    return newProduct;
                 }
                 catch (Exception ex)
                 {
@@ -69,70 +69,70 @@ namespace CarrinhoCompras.DAL.SQL
 
         }
 
-        public async Task<CarEntity> GetCarAsync(Guid id)
+        public async Task<ProductEntity> GetProductAsync(Guid id)
         {
-            using (var con = new SqlConnection(_options.CurrentValue.CarsDbConnectionString))
+            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
             {
                 const string sqlQuery = @"SELECT 
                     id,
                     modelname,                    
-                    cartype,
+                    Producttype,
                     createdon,
                     modifiedon
-                FROM cars
+                FROM Products
                 WHERE id=@id;";
-                return await con.QueryFirstAsync<CarEntity>(sqlQuery, new { id = id.ToString() }, commandType: CommandType.Text);
+                return await con.QueryFirstAsync<ProductEntity>(sqlQuery, new { id = id.ToString() }, commandType: CommandType.Text);
             }
         }
 
-        public async Task<bool> UpdateCarAsync(CarEntity car)
+        public async Task<bool> UpdateProductAsync(ProductEntity product)
         {
-            car.ModifiedOn = DateTime.UtcNow;
+            product.ModifiedOn = DateTime.UtcNow;
 
-            const string sqlQuery = @"UPDATE cars SET                
+            const string sqlQuery = @"UPDATE products SET                
                 modelname = @modelname,                
-                cartype = @cartype,
+                type = @type,
                 createdon = @createdon,
                 modifiedon = @modifiedon
             WHERE id = @id;";
 
-            using (var con = new SqlConnection(_options.CurrentValue.CarsDbConnectionString))
+            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
             {
-                await con.ExecuteAsync(sqlQuery, car, commandType: CommandType.Text);
+                await con.ExecuteAsync(sqlQuery, product, commandType: CommandType.Text);
                 return true;
             }
         }
 
-        public async Task<bool> DeleteCarAsync(Guid id)
+        public async Task<bool> DeleteProductAsync(Guid id)
         {
-            const string sqlQuery = @"DELETE FROM cars WHERE id = @id;";
-            using (var con = new SqlConnection(_options.CurrentValue.CarsDbConnectionString))
+            const string sqlQuery = @"DELETE FROM products WHERE id = @id;";
+            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
             {
                 await con.ExecuteAsync(sqlQuery, new { id = id.ToString() }, commandType: CommandType.Text);
                 return true;
             }
         }
 
-        public async Task<IEnumerable<CarEntity>> GetCarsListAsync(int pageNumber, int pageSize)
+        public async Task<IEnumerable<ProductEntity>> GetProductsListAsync(int pageNumber, int pageSize)
         {
-            using (var con = new SqlConnection(_options.CurrentValue.CarsDbConnectionString))
+            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
             {
                 var offset = pageNumber <= 1 ? 0 : (pageNumber - 1) * pageSize;
                 const string sqlQuery = @"SELECT 
                     id,
                     modelname,                    
-                    cartype,
+                    type,
                     createdon,
                     modifiedon
-                FROM cars
+                FROM products
                 LIMIT @pageSize OFFSET @offset;";
-                return await con.QueryAsync<CarEntity>(sqlQuery, new { pageSize, offset }, commandType: CommandType.Text);
+                return await con.QueryAsync<ProductEntity>(sqlQuery, new { pageSize, offset }, commandType: CommandType.Text);
             }
         }
 
         public Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = new CancellationToken())
         {
-            using (var con = new SqlConnection(_options.CurrentValue.CarsDbConnectionString))
+            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
             {
                 try
                 {

@@ -11,40 +11,40 @@ namespace CarrinhoCompras.BLL.Tests.Helpers
 {
     public static class Moqs
     {
-        public static Mock<ICarsService> CarsServiceMoq()
+        public static Mock<IProductsService> CarsServiceMoq()
         {
             var fixture = new Fixture();
 
-            var moq = new Mock<ICarsService>(MockBehavior.Strict);
-            moq.Setup(s => s.CreateCarAsync(It.IsAny<Car>()))
-              .ReturnsAsync(fixture.Build<Car>().Create());
-            moq.Setup(s => s.GetCarAsync(It.IsAny<Guid>()))
-             .ReturnsAsync(fixture.Build<Car>().Create());
-            moq.Setup(s => s.UpdateCarAsync(It.IsAny<Car>()))
+            var moq = new Mock<IProductsService>(MockBehavior.Strict);
+            moq.Setup(s => s.CreateProductAsync(It.IsAny<Product>()))
+              .ReturnsAsync(fixture.Build<Product>().Create());
+            moq.Setup(s => s.GetProductAsync(It.IsAny<Guid>()))
+             .ReturnsAsync(fixture.Build<Product>().Create());
+            moq.Setup(s => s.UpdateProductAsync(It.IsAny<Product>()))
               .ReturnsAsync(true);
-            moq.Setup(s => s.DeleteCarAsync(It.IsAny<Guid>()))
+            moq.Setup(s => s.DeleteProductAsync(It.IsAny<Guid>()))
             .ReturnsAsync(true);
-            moq.Setup(s => s.GetCarsListAsync(It.IsAny<int>(), It.IsAny<int>()))
-             .ReturnsAsync(fixture.Build<Car>().CreateMany(20));
+            moq.Setup(s => s.GetProductsListAsync(It.IsAny<int>(), It.IsAny<int>()))
+             .ReturnsAsync(fixture.Build<Product>().CreateMany(20));
 
             return moq;
         }
 
-        public static Mock<ICarsRepository> CarsReposirotyMoq(CarEntity carEntity)
+        public static Mock<IProductsRepository> CarsRepositoryMoq(ProductEntity carEntity)
         {
             var fixture = new Fixture();
 
-            var moq = new Mock<ICarsRepository>(MockBehavior.Strict);
-            moq.Setup(s => s.CreateCarAsync(It.IsAny<CarEntity>()))
+            var moq = new Mock<IProductsRepository>(MockBehavior.Strict);
+            moq.Setup(s => s.CreateProductAsync(It.IsAny<ProductEntity>()))
               .ReturnsAsync(carEntity);
-            moq.Setup(s => s.GetCarAsync(It.IsAny<Guid>()))
+            moq.Setup(s => s.GetProductAsync(It.IsAny<Guid>()))
              .ReturnsAsync(carEntity);
-            moq.Setup(s => s.UpdateCarAsync(It.IsAny<CarEntity>()))
+            moq.Setup(s => s.UpdateProductAsync(It.IsAny<ProductEntity>()))
               .ReturnsAsync(true);
-            moq.Setup(s => s.DeleteCarAsync(It.IsAny<Guid>()))
+            moq.Setup(s => s.DeleteProductAsync(It.IsAny<Guid>()))
             .ReturnsAsync(true);
-            moq.Setup(s => s.GetCarsListAsync(It.IsAny<int>(), It.IsAny<int>()))
-             .ReturnsAsync(fixture.Build<CarEntity>().CreateMany(20));
+            moq.Setup(s => s.GetProductsListAsync(It.IsAny<int>(), It.IsAny<int>()))
+             .ReturnsAsync(fixture.Build<ProductEntity>().CreateMany(20));
 
             return moq;
         }

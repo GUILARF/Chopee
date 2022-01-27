@@ -19,9 +19,9 @@ namespace CarrinhoCompras.API.Controllers
     public class CarsV0Controller : ControllerBase
     {
         private readonly IMapper _mapper;
-        private readonly ICarsService _carsService;
+        private readonly IProductsService _carsService;
 
-        public CarsV0Controller(IMapper mapper, ICarsService carsService)
+        public CarsV0Controller(IMapper mapper, IProductsService carsService)
         {
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
             _carsService = carsService ?? throw new ArgumentNullException(nameof(carsService));
@@ -33,7 +33,7 @@ namespace CarrinhoCompras.API.Controllers
         /// <param name="limit">Items count</param>
         /// <returns></returns>
         [HttpGet("")]
-        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(IEnumerable<Car>), Description = "Returns finded cars array")]
+        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(IEnumerable<Product>), Description = "Returns finded cars array")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid pageNumber or pageSize")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
         public async Task<IActionResult> GetCarsV0ListAsync([FromQuery] int limit = 50)
@@ -43,8 +43,8 @@ namespace CarrinhoCompras.API.Controllers
                 return BadRequest();
             }
 
-            var result = await _carsService.GetCarsListAsync(1, limit);
-            return Ok(_mapper.Map<IEnumerable<Car>>(result));
+            var result = await _carsService.GetProductsListAsync(1, limit);
+            return Ok(_mapper.Map<IEnumerable<Product>>(result));
         }
     }
 }

@@ -9,7 +9,7 @@ namespace CarrinhoCompras.BLL.Tests.Helpers
         {
             var mockMapper = new MapperConfiguration(cfg =>
             {
-                cfg.AddProfile(new CarsMapping());
+                cfg.AddProfile(new ProductMapping());
 
             });
             var mapper = mockMapper.CreateMapper();

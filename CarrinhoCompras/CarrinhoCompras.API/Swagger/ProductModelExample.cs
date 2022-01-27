@@ -4,16 +4,16 @@ using System;
 
 namespace CarrinhoCompras.API.Swagger
 {
-    public class CarModelExample : IExamplesProvider
+    public class ProductModelExample : IExamplesProvider
     {
         public object GetExamples()
         {
             var dnow = DateTime.UtcNow;
-            return new Car
+            return new Product
             {
                 Id = Guid.NewGuid(),
-                ModelName = "Toyota",
-                CarType = CarType.Hatchback,
+                Name = "Toyota",
+                Type = ProductType.Toy,
                 CreatedOn = dnow,
                 ModifiedOn = dnow
             };

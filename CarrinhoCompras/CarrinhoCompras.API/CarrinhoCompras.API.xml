@@ -4,45 +4,45 @@
         <name>CarrinhoCompras.API</name>
     </assembly>
     <members>
-        <member name="M:CarrinhoCompras.API.Controllers.CarsController.#ctor(AutoMapper.IMapper,CarrinhoCompras.BLL.Contracts.ICarsService)">
+        <member name="M:CarrinhoCompras.API.Controllers.ProductController.#ctor(AutoMapper.IMapper,CarrinhoCompras.BLL.Contracts.IProductsService)">
             <summary>
-            Cars db api
+            products db api
             </summary>
             <param name="mapper"></param>
-            <param name="carsService"></param>
+            <param name="productsService"></param>
         </member>
-        <member name="M:CarrinhoCompras.API.Controllers.CarsController.CreateCarAsync(CarrinhoCompras.API.Models.Car)">
+        <member name="M:CarrinhoCompras.API.Controllers.ProductController.CreateproductAsync(CarrinhoCompras.API.Models.Product)">
             <summary>
-            Create a new car
+            Create a new product
             </summary>
-            <param name="car"></param>
-            <returns>Returns created car</returns>           
+            <param name="product"></param>
+            <returns>Returns created product</returns>           
         </member>
-        <member name="M:CarrinhoCompras.API.Controllers.CarsController.GetCarAsync(System.Guid)">
+        <member name="M:CarrinhoCompras.API.Controllers.ProductController.GetproductAsync(System.Guid)">
             <summary>
-            Get car by id
+            Get product by id
             </summary>
-            <param name="id">Car Id</param>
-            <returns>Returns finded car</returns>
+            <param name="id">product Id</param>
+            <returns>Returns finded product</returns>
         </member>
-        <member name="M:CarrinhoCompras.API.Controllers.CarsController.UpdateCarAsync(System.Guid,CarrinhoCompras.API.Models.Car)">
+        <member name="M:CarrinhoCompras.API.Controllers.ProductController.UpdateproductAsync(System.Guid,CarrinhoCompras.API.Models.Product)">
             <summary>
-            Update existing car
+            Update existing product
             </summary>
-            <param name="id">Car id</param>
-            <param name="car">Car parameters</param>
+            <param name="id">product id</param>
+            <param name="product">product parameters</param>
             <returns></returns>
         </member>
-        <member name="M:CarrinhoCompras.API.Controllers.CarsController.DeleteCarAsync(System.Guid)">
+        <member name="M:CarrinhoCompras.API.Controllers.ProductController.DeleteproductAsync(System.Guid)">
             <summary>
-            Delete car
+            Delete product
             </summary>
-            <param name="id">Car id</param>
+            <param name="id">product id</param>
             <returns></returns>
         </member>
-        <member name="M:CarrinhoCompras.API.Controllers.CarsController.GetCarsListAsync(System.Int32,System.Int32)">
+        <member name="M:CarrinhoCompras.API.Controllers.ProductController.GetproductsListAsync(System.Int32,System.Int32)">
             <summary>
-            Get cars list
+            Get products list
             </summary>
             <param name="pageNumber">Page number</param>
             <param name="pageSize">Page size</param>
@@ -87,61 +87,6 @@
             </summary>       
             <param name="limit">Items count</param>
             <returns></returns>
-        </member>
-        <member name="T:CarrinhoCompras.API.Models.Car">
-            <summary>
-            Car type
-            </summary>
-        </member>
-        <member name="P:CarrinhoCompras.API.Models.Car.Id">
-            <summary>
-            Car id
-            </summary>
-        </member>
-        <member name="P:CarrinhoCompras.API.Models.Car.ModelName">
-            <summary>
-            Car model name
-            </summary>
-        </member>
-        <member name="P:CarrinhoCompras.API.Models.Car.CarType">
-            <summary>
-            Car type
-            </summary>
-        </member>
-        <member name="P:CarrinhoCompras.API.Models.Car.CreatedOn">
-            <summary>
-            CreatedOn
-            </summary>
-        </member>
-        <member name="P:CarrinhoCompras.API.Models.Car.ModifiedOn">
-            <summary>
-            ModifiedOn
-            </summary>
-        </member>
-        <member name="T:CarrinhoCompras.API.Models.CarType">
-            <summary>
-            Car type
-            </summary>
-        </member>
-        <member name="F:CarrinhoCompras.API.Models.CarType.Hatchback">
-            <summary>
-            Hatchback
-            </summary>
-        </member>
-        <member name="F:CarrinhoCompras.API.Models.CarType.Sedan">
-            <summary>
-            Sedan
-            </summary>
-        </member>
-        <member name="F:CarrinhoCompras.API.Models.CarType.SUV">
-            <summary>
-            SUV
-            </summary>
-        </member>
-        <member name="F:CarrinhoCompras.API.Models.CarType.Coupe">
-            <summary>
-            Coupe
-            </summary>
         </member>
         <member name="T:CarrinhoCompras.API.Models.Todo">
             <summary>
