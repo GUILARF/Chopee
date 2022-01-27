@@ -5,3 +5,12 @@
 2022-01-26 22:30:53.445 -03:00 [Information] web api service is started.
 2022-01-26 22:30:54.429 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 181.9157 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
 2022-01-26 22:30:54.747 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 175.1736 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-26 22:36:53.456 -03:00 [Information] web api service is started.
+2022-01-26 22:38:04.471 -03:00 [Information] web api service is started.
+2022-01-26 22:49:17.141 -03:00 [Information] web api service is started.
+2022-01-26 22:54:19.721 -03:00 [Information] web api service is started.
+2022-01-26 22:54:20.527 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 180.5857 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-26 22:54:20.846 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 172.8652 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-26 22:55:06.670 -03:00 [Information] web api service is started.
+2022-01-26 23:05:56.088 -03:00 [Information] web api service is started.
+2022-01-26 23:12:00.776 -03:00 [Information] web api service is started.

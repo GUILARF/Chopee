@@ -20,6 +20,8 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using CarrinhoCompras.DAL.SQL.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace CarrinhoCompras.API
 {
@@ -121,6 +123,9 @@ namespace CarrinhoCompras.API
                     IssuerSigningKey = new SymmetricSecurityKey(key)
                 };
             });
+
+            services.AddDbContext<TableContext>(
+        options => options.UseSqlServer("name=ConnectionStrings:DefaultConnectionString"));
 
             services.AddSwaggerExamples();
 

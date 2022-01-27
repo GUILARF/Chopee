@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
+using CarrinhoCompras.DAL.SQL.Context;
 
 namespace CarrinhoCompras.API.Controllers
 {
@@ -22,16 +23,18 @@ namespace CarrinhoCompras.API.Controllers
     {
         private readonly IMapper _mapper;
         private readonly IProductsService _productsService;
+        private readonly TableContext _tableContext;
 
         /// <summary>
         /// products db api
         /// </summary>
         /// <param name="mapper"></param>
         /// <param name="productsService"></param>
-        public ProductController(IMapper mapper, IProductsService productsService)
+        public ProductController(IMapper mapper, IProductsService productsService, TableContext tableContext)
         {
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
             _productsService = productsService ?? throw new ArgumentNullException(nameof(productsService));
+            _tableContext = tableContext;
         }
 
         /// <summary>

@@ -4,7 +4,7 @@
         <name>CarrinhoCompras.API</name>
     </assembly>
     <members>
-        <member name="M:CarrinhoCompras.API.Controllers.ProductController.#ctor(AutoMapper.IMapper,CarrinhoCompras.BLL.Contracts.IProductsService)">
+        <member name="M:CarrinhoCompras.API.Controllers.ProductController.#ctor(AutoMapper.IMapper,CarrinhoCompras.BLL.Contracts.IProductsService,CarrinhoCompras.DAL.SQL.Context.TableContext)">
             <summary>
             products db api
             </summary>
