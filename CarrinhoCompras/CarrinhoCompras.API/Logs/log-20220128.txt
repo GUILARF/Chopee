@@ -1,0 +1,48 @@
+2022-01-28 00:03:23.888 -03:00 [Information] web api service is started.
+2022-01-28 00:03:24.823 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 178.4074 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:03:25.146 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 173.7605 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:04:34.769 -03:00 [Information] web api service is started.
+2022-01-28 00:04:35.706 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 180.2497 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:04:36.022 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 169.7125 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:05:54.429 -03:00 [Information] web api service is started.
+2022-01-28 00:05:55.344 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 177.0419 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:05:55.679 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 181.3021 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:06:37.187 -03:00 [Information] web api service is started.
+2022-01-28 00:06:38.129 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 179.5945 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:06:38.445 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 172.1080 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:13:21.932 -03:00 [Information] web api service is started.
+2022-01-28 00:13:22.845 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 181.1242 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:13:23.158 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 170.9925 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:14:58.055 -03:00 [Information] web api service is started.
+2022-01-28 00:14:58.817 -03:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 180.6839 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:14:59.132 -03:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 174.9122 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"]
+2022-01-28 00:16:47.308 -03:00 [Error] HTTP "POST" "/api/v1/products" responded 500 in 97604.7293 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Connection": "Keep-Alive"), ("Content-Type": "application/json-patch+json"), ("Accept": "application/json"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7"), ("Cookie": ".AspNetCore.Antiforgery.CubOFMKinTI=CfDJ8PSpqGcKSvxAoFSiL7dajl0p0JxdzW0t0dWmCAMkQVaPMlTZJ32qKu-RRMG_EO7odTw7BYjzs0jBqOmGq9QiUMwhHQaFkIBKuYvSVjE0CzSkD4EGZjBvanGhPeiWAmUX9aRegZ8l29Hu2Gd-dk4UX04"), ("Host": "localhost:51780"), ("Referer": "http://localhost:51780/swagger/index.html"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"), ("Origin": "http://localhost:51780"), ("Content-Length": "175"), ("sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"97\", \"Chromium\";v=\"97\""), ("sec-ch-ua-mobile": "?0"), ("sec-ch-ua-platform": "\"Windows\""), ("Sec-Fetch-Site": "same-origin"), ("Sec-Fetch-Mode": "cors"), ("Sec-Fetch-Dest": "empty"), ("MS-ASPNETCORE-TOKEN": "df7afc4c-3eec-4979-a623-ca69ee7e6c93"), ("X-Original-Proto": "http"), ("X-Original-For": "127.0.0.1:65249")]]
+System.Data.SqlClient.SqlException (0x80131904): Nome de objeto 'products' inválido.
+   at CarrinhoCompras.DAL.SQL.ProductsRepository.CreateProductAsync(ProductEntity newProduct)
+   at CarrinhoCompras.BLL.ProductService.CreateProductAsync(Product product) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.BLL\ProductsService.cs:line 26
+   at CarrinhoCompras.API.Controllers.ProductController.CreateproductAsync(Product product) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Controllers\ProductController.cs:line 56
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CarrinhoCompras.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in C:\Users\Pichau\source\repos\Chopee\CarrinhoCompras\CarrinhoCompras.API\Middlewares\HttpContextMiddleware.cs:line 40
+ClientConnectionId:20ba3f4c-4251-40e2-97df-8cb2184ee77b
+Error Number:208,State:1,Class:16
+2022-01-28 00:30:34.894 -03:00 [Information] web api service is started.
+2022-01-28 00:31:41.328 -03:00 [Information] web api service is started.

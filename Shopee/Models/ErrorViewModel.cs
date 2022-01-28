@@ -1,5 +1,3 @@
-using System;
-
 namespace Shopee.Models
 {
     public class ErrorViewModel

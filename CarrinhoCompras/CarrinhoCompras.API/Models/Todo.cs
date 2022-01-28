@@ -9,14 +9,15 @@ namespace CarrinhoCompras.API.Models
         /// Todo id
         /// </summary>
         public int Id { get; set; }
+
         /// <summary>
         /// Todo title
-        /// </summary> 
+        /// </summary>
         public string Title { get; set; }
+
         /// <summary>
         /// Todo status
-        /// </summary>        
+        /// </summary>
         public bool Completed { get; set; }
-
     }
 }

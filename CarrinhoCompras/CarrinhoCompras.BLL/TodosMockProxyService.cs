@@ -1,6 +1,6 @@
-using Microsoft.Extensions.Diagnostics.HealthChecks;
 using CarrinhoCompras.BLL.Contracts;
 using CarrinhoCompras.BLL.Models;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading;

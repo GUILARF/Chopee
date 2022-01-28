@@ -1,6 +1,6 @@
+using CarrinhoCompras.BLL.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using CarrinhoCompras.BLL.Contracts;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Net;
@@ -24,8 +24,8 @@ namespace CarrinhoCompras.API.Controllers
 
         /// <summary>
         /// Generate sample token
-        /// </summary>       
-        /// <returns>Generated token</returns>        
+        /// </summary>
+        /// <returns>Generated token</returns>
         [AllowAnonymous]
         [HttpGet("generate")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Generated token")]
@@ -40,7 +40,7 @@ namespace CarrinhoCompras.API.Controllers
         /// Validate sample token
         /// </summary>
         /// <param name="token">Token for validation</param>
-        /// <returns>Token validation status</returns>        
+        /// <returns>Token validation status</returns>
         [HttpPost("validate")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Token validation status")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Bad request for missing or invalid parameter")]

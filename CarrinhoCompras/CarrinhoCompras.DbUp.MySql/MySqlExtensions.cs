@@ -1,8 +1,8 @@
-using System;
-using System.Data;
 using DbUp;
 using DbUp.Engine.Output;
 using MySql.Data.MySqlClient;
+using System;
+using System.Data;
 
 public static class MySqlExtensions
 {
@@ -86,5 +86,3 @@ public static class MySqlExtensions
         }
     }
 }
-
-

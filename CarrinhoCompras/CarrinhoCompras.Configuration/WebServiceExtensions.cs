@@ -1,3 +1,9 @@
+using CarrinhoCompras.BLL;
+using CarrinhoCompras.BLL.Contracts;
+using CarrinhoCompras.BLL.Models;
+using CarrinhoCompras.DAL.SQL;
+using CarrinhoCompras.DAL.SQL.Interfaces;
+using CarrinhoCompras.DAL.SQL.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Http;
@@ -6,14 +12,8 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Polly;
-using CarrinhoCompras.BLL;
-using CarrinhoCompras.BLL.Contracts;
-using CarrinhoCompras.BLL.Models;
-using CarrinhoCompras.DAL.SQL;
-using CarrinhoCompras.DAL.SQL.Interfaces;
 using System;
 using System.Linq;
-using CarrinhoCompras.DAL.SQL.Models;
 
 namespace Microsoft.Extensions.DependencyInjection
 {

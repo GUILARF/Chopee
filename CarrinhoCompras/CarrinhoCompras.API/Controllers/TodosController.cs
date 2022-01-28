@@ -1,8 +1,8 @@
 using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using CarrinhoCompras.API.Models;
 using CarrinhoCompras.BLL;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Collections.Generic;
@@ -22,7 +22,7 @@ namespace CarrinhoCompras.API.Controllers
         private readonly TodosMockProxyService _todosMockService;
 
         /// <summary>
-        /// Todos mock web proxy 
+        /// Todos mock web proxy
         /// </summary>
         /// <param name="mapper"></param>
         /// <param name="carsService"></param>
@@ -35,7 +35,7 @@ namespace CarrinhoCompras.API.Controllers
         /// <summary>
         /// Get todo by id
         /// </summary>
-        /// <param name="id">Todo id</param>     
+        /// <param name="id">Todo id</param>
         /// <returns></returns>
         [HttpGet("{id}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
@@ -53,7 +53,7 @@ namespace CarrinhoCompras.API.Controllers
 
         /// <summary>
         /// Get todos list from remote mock api
-        /// </summary>      
+        /// </summary>
         /// <returns></returns>
         [HttpGet("")]
         [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(IEnumerable<Todo>), Description = "Returns todos array")]

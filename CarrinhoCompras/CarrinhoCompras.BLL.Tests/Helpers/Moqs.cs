@@ -1,11 +1,9 @@
 using AutoFixture;
-using Moq;
 using CarrinhoCompras.BLL.Contracts;
 using CarrinhoCompras.BLL.Models;
 using CarrinhoCompras.DAL.SQL.Interfaces;
 using CarrinhoCompras.DAL.SQL.Models;
-using System;
-using CarrinhoCompras.DAL.SQL.Interfaces;
+using Moq;
 
 namespace CarrinhoCompras.BLL.Tests.Helpers
 {
@@ -18,11 +16,11 @@ namespace CarrinhoCompras.BLL.Tests.Helpers
             var moq = new Mock<IProductsService>(MockBehavior.Strict);
             moq.Setup(s => s.CreateProductAsync(It.IsAny<Product>()))
               .ReturnsAsync(fixture.Build<Product>().Create());
-            moq.Setup(s => s.GetProductAsync(It.IsAny<Guid>()))
+            moq.Setup(s => s.GetProductAsync(It.IsAny<long>()))
              .ReturnsAsync(fixture.Build<Product>().Create());
             moq.Setup(s => s.UpdateProductAsync(It.IsAny<Product>()))
               .ReturnsAsync(true);
-            moq.Setup(s => s.DeleteProductAsync(It.IsAny<Guid>()))
+            moq.Setup(s => s.DeleteProductAsync(It.IsAny<long>()))
             .ReturnsAsync(true);
             moq.Setup(s => s.GetProductsListAsync(It.IsAny<int>(), It.IsAny<int>()))
              .ReturnsAsync(fixture.Build<Product>().CreateMany(20));
@@ -37,11 +35,11 @@ namespace CarrinhoCompras.BLL.Tests.Helpers
             var moq = new Mock<IProductsRepository>(MockBehavior.Strict);
             moq.Setup(s => s.CreateProductAsync(It.IsAny<ProductEntity>()))
               .ReturnsAsync(carEntity);
-            moq.Setup(s => s.GetProductAsync(It.IsAny<Guid>()))
+            moq.Setup(s => s.GetProductAsync(It.IsAny<long>()))
              .ReturnsAsync(carEntity);
             moq.Setup(s => s.UpdateProductAsync(It.IsAny<ProductEntity>()))
               .ReturnsAsync(true);
-            moq.Setup(s => s.DeleteProductAsync(It.IsAny<Guid>()))
+            moq.Setup(s => s.DeleteProductAsync(It.IsAny<long>()))
             .ReturnsAsync(true);
             moq.Setup(s => s.GetProductsListAsync(It.IsAny<int>(), It.IsAny<int>()))
              .ReturnsAsync(fixture.Build<ProductEntity>().CreateMany(20));

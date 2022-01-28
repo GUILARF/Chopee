@@ -1,6 +1,7 @@
 ﻿using CarrinhoCompras.DAL.SQL.Interfaces;
 using CarrinhoCompras.DAL.SQL.Models;
 using Dapper;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
 using System;
@@ -12,41 +13,38 @@ using System.Threading.Tasks;
 
 namespace CarrinhoCompras.DAL.SQL
 {
-    public class ProductsRepository: IProductsRepository, IHealthCheck
+    public class ProductsRepository : IProductsRepository, IHealthCheck
     {
         private readonly IOptionsMonitor<ProductsSqlRepositoryOptions> _options;
+        private IConfiguration configuration;
 
-        public ProductsRepository(IOptionsMonitor<ProductsSqlRepositoryOptions> options)
+        public ProductsRepository(IOptionsMonitor<ProductsSqlRepositoryOptions> options, IConfiguration Iconfig)
         {
             _options = options;
+            configuration = Iconfig;
         }
 
         public async Task<ProductEntity> CreateProductAsync(ProductEntity newProduct)
         {
-            //if (newProduct.Id == Guid.Empty.ToString())
-            //{
-            //    newProduct.Id = Guid.NewGuid().ToString();
-            //}
             var dnow = DateTime.UtcNow;
             newProduct.CreatedOn = dnow;
             newProduct.ModifiedOn = dnow;
-            newProduct.Type = 1;
 
-            const string sqlQuery = @"INSERT INTO products (
-                    
-                    modelname,
-                    type,
+            const string sqlQuery = @"INSERT INTO product (
+
+                    Name,
+                    Type,
                     createdon,
                     modifiedon
                 )
                 VALUES (
-                    
-                    @modelname,
-                    @type,
-                    @createdon,
-                    @modifiedon);";
 
-            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
+                    @Name,
+                    @Type,
+                    @Createdon,
+                    @Modifiedon);";
+
+            using (var con = new SqlConnection(configuration.GetSection("ConnectionStrings").GetSection("DefaultConnectionString").Value))
             {
                 //await db.(sqlQuery, newProduct, commandType: CommandType.Text);
                 //return newProduct;
@@ -66,20 +64,19 @@ namespace CarrinhoCompras.DAL.SQL
                     con.Close();
                 }
             }
-
         }
 
-        public async Task<ProductEntity> GetProductAsync(Guid id)
+        public async Task<ProductEntity> GetProductAsync(long id)
         {
-            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
+            using (var con = new SqlConnection(configuration.GetSection("ConnectionStrings").GetSection("DefaultConnectionString").Value))
             {
-                const string sqlQuery = @"SELECT 
+                const string sqlQuery = @"SELECT
                     id,
-                    modelname,                    
-                    Producttype,
-                    createdon,
-                    modifiedon
-                FROM Products
+                    Name,
+                    Type,
+                    Createdon,
+                    Modifiedon
+                FROM product
                 WHERE id=@id;";
                 return await con.QueryFirstAsync<ProductEntity>(sqlQuery, new { id = id.ToString() }, commandType: CommandType.Text);
             }
@@ -89,24 +86,24 @@ namespace CarrinhoCompras.DAL.SQL
         {
             product.ModifiedOn = DateTime.UtcNow;
 
-            const string sqlQuery = @"UPDATE products SET                
-                modelname = @modelname,                
-                type = @type,
-                createdon = @createdon,
-                modifiedon = @modifiedon
+            const string sqlQuery = @"UPDATE product SET
+                Name = @Name,
+                Type = @Type,
+                Createdon = @Createdon,
+                Modifiedon = @Modifiedon
             WHERE id = @id;";
 
-            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
+            using (var con = new SqlConnection(configuration.GetSection("ConnectionStrings").GetSection("DefaultConnectionString").Value))
             {
                 await con.ExecuteAsync(sqlQuery, product, commandType: CommandType.Text);
                 return true;
             }
         }
 
-        public async Task<bool> DeleteProductAsync(Guid id)
+        public async Task<bool> DeleteProductAsync(long id)
         {
-            const string sqlQuery = @"DELETE FROM products WHERE id = @id;";
-            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
+            const string sqlQuery = @"DELETE FROM product WHERE id = @id;";
+            using (var con = new SqlConnection(configuration.GetSection("ConnectionStrings").GetSection("DefaultConnectionString").Value))
             {
                 await con.ExecuteAsync(sqlQuery, new { id = id.ToString() }, commandType: CommandType.Text);
                 return true;
@@ -115,16 +112,16 @@ namespace CarrinhoCompras.DAL.SQL
 
         public async Task<IEnumerable<ProductEntity>> GetProductsListAsync(int pageNumber, int pageSize)
         {
-            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
+            using (var con = new SqlConnection(configuration.GetSection("ConnectionStrings").GetSection("DefaultConnectionString").Value))
             {
                 var offset = pageNumber <= 1 ? 0 : (pageNumber - 1) * pageSize;
-                const string sqlQuery = @"SELECT 
+                const string sqlQuery = @"SELECT
                     id,
-                    modelname,                    
-                    type,
-                    createdon,
-                    modifiedon
-                FROM products
+                    Name,
+                    Type,
+                    Createdon,
+                    Modifiedon
+                FROM product
                 LIMIT @pageSize OFFSET @offset;";
                 return await con.QueryAsync<ProductEntity>(sqlQuery, new { pageSize, offset }, commandType: CommandType.Text);
             }
@@ -132,7 +129,7 @@ namespace CarrinhoCompras.DAL.SQL
 
         public Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = new CancellationToken())
         {
-            using (var con = new SqlConnection(_options.CurrentValue.ProductsDbConnectionString))
+            using (var con = new SqlConnection(configuration.GetSection("ConnectionStrings").GetSection("DefaultConnectionString").Value))
             {
                 try
                 {

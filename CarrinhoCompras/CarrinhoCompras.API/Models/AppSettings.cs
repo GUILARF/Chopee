@@ -7,5 +7,4 @@ namespace CarrinhoCompras.API.Models
         public string WebApiUrl { get; set; }
         public string[] AllowedOrigins { get; set; }
     }
-
 }

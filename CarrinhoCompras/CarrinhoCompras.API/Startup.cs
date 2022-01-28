@@ -1,18 +1,20 @@
 using AutoMapper;
+using CarrinhoCompras.API.Middleware;
+using CarrinhoCompras.API.Models;
+using CarrinhoCompras.API.Swagger;
+using CarrinhoCompras.DAL.SQL.Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
-using CarrinhoCompras.API.Middleware;
-using CarrinhoCompras.API.Models;
-using CarrinhoCompras.API.Swagger;
 using Swashbuckle.AspNetCore.Filters;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
@@ -20,8 +22,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using CarrinhoCompras.DAL.SQL.Context;
-using Microsoft.EntityFrameworkCore;
 
 namespace CarrinhoCompras.API
 {
@@ -41,10 +41,9 @@ namespace CarrinhoCompras.API
             services.Configure<AppSettings>(appSettingsSection);
             var appSettings = appSettingsSection.Get<AppSettings>();
 
-
             services.AddWebServices(
                 BLLOptionsSection: Configuration.GetSection("AppSettings"),
-                DALOptionSection: Configuration.GetSection("ConnectionStrings")
+                DALOptionSection: Configuration.GetSection("DefaultConnectionString")
             );
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -213,6 +212,6 @@ namespace CarrinhoCompras.API
             return info;
         }
 
-        #endregion
+        #endregion internal
     }
 }

@@ -1,8 +1,8 @@
 using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using CarrinhoCompras.API.Models;
 using CarrinhoCompras.BLL.Contracts;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Collections.Generic;
@@ -29,7 +29,7 @@ namespace CarrinhoCompras.API.Controllers
 
         /// <summary>
         /// Get cars list
-        /// </summary>       
+        /// </summary>
         /// <param name="limit">Items count</param>
         /// <returns></returns>
         [HttpGet("")]

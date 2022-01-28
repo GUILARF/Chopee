@@ -7,9 +7,9 @@ using System.Reflection;
 
 namespace CarrinhoCompras.DbUpConsole
 {
-    class Program
+    internal class Program
     {
-        static int Main(string[] args)
+        private static int Main(string[] args)
         {
             var builder = CreateConfigurationBuilder(args);
             var configuration = builder.Build();

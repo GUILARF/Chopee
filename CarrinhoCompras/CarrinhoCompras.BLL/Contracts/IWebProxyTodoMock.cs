@@ -7,6 +7,7 @@ namespace CarrinhoCompras.BLL.Contracts
     public interface ITodosMockProxyService
     {
         Task<IEnumerable<Todo>> GetTodos();
+
         Task<Todo> GetTodoById(int id);
     }
 }

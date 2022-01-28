@@ -11,8 +11,8 @@ namespace CarrinhoCompras.API.Swagger
             var dnow = DateTime.UtcNow;
             return new Product
             {
-                Id = Guid.NewGuid(),
-                Name = "Toyota",
+                Id = long.MinValue,
+                Name = "Toy",
                 Type = ProductType.Toy,
                 CreatedOn = dnow,
                 ModifiedOn = dnow

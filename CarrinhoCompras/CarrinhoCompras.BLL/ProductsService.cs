@@ -27,13 +27,13 @@ namespace CarrinhoCompras.BLL
             return _mapper.Map<Product>(newProduct);
         }
 
-        public async Task<bool> DeleteProductAsync(Guid id)
+        public async Task<bool> DeleteProductAsync(long id)
         {
             var result = await _productsRepo.DeleteProductAsync(id);
             return result;
         }
 
-        public async Task<Product> GetProductAsync(Guid id)
+        public async Task<Product> GetProductAsync(long id)
         {
             var product = await _productsRepo.GetProductAsync(id);
             return _mapper.Map<Product>(product);

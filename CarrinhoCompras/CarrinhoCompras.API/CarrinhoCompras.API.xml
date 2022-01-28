@@ -16,16 +16,16 @@
             Create a new product
             </summary>
             <param name="product"></param>
-            <returns>Returns created product</returns>           
+            <returns>Returns created product</returns>
         </member>
-        <member name="M:CarrinhoCompras.API.Controllers.ProductController.GetproductAsync(System.Guid)">
+        <member name="M:CarrinhoCompras.API.Controllers.ProductController.GetproductAsync(System.Int64)">
             <summary>
             Get product by id
             </summary>
             <param name="id">product Id</param>
             <returns>Returns finded product</returns>
         </member>
-        <member name="M:CarrinhoCompras.API.Controllers.ProductController.UpdateproductAsync(System.Guid,CarrinhoCompras.API.Models.Product)">
+        <member name="M:CarrinhoCompras.API.Controllers.ProductController.UpdateproductAsync(System.Int64,CarrinhoCompras.API.Models.Product)">
             <summary>
             Update existing product
             </summary>
@@ -33,7 +33,7 @@
             <param name="product">product parameters</param>
             <returns></returns>
         </member>
-        <member name="M:CarrinhoCompras.API.Controllers.ProductController.DeleteproductAsync(System.Guid)">
+        <member name="M:CarrinhoCompras.API.Controllers.ProductController.DeleteproductAsync(System.Int64)">
             <summary>
             Delete product
             </summary>
@@ -50,7 +50,7 @@
         </member>
         <member name="M:CarrinhoCompras.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,CarrinhoCompras.BLL.TodosMockProxyService)">
             <summary>
-            Todos mock web proxy 
+            Todos mock web proxy
             </summary>
             <param name="mapper"></param>
             <param name="carsService"></param>
@@ -59,32 +59,32 @@
             <summary>
             Get todo by id
             </summary>
-            <param name="id">Todo id</param>     
+            <param name="id">Todo id</param>
             <returns></returns>
         </member>
         <member name="M:CarrinhoCompras.API.Controllers.TodoController.GetTodos">
             <summary>
             Get todos list from remote mock api
-            </summary>      
+            </summary>
             <returns></returns>
         </member>
         <member name="M:CarrinhoCompras.API.Controllers.TokenController.GenerateToken">
             <summary>
             Generate sample token
-            </summary>       
-            <returns>Generated token</returns>        
+            </summary>
+            <returns>Generated token</returns>
         </member>
         <member name="M:CarrinhoCompras.API.Controllers.TokenController.ValidateToken(System.String)">
             <summary>
             Validate sample token
             </summary>
             <param name="token">Token for validation</param>
-            <returns>Token validation status</returns>        
+            <returns>Token validation status</returns>
         </member>
         <member name="M:CarrinhoCompras.API.Controllers.CarsV0Controller.GetCarsV0ListAsync(System.Int32)">
             <summary>
             Get cars list
-            </summary>       
+            </summary>
             <param name="limit">Items count</param>
             <returns></returns>
         </member>
@@ -101,12 +101,12 @@
         <member name="P:CarrinhoCompras.API.Models.Todo.Title">
             <summary>
             Todo title
-            </summary> 
+            </summary>
         </member>
         <member name="P:CarrinhoCompras.API.Models.Todo.Completed">
             <summary>
             Todo status
-            </summary>        
+            </summary>
         </member>
         <member name="T:CarrinhoCompras.API.Swagger.SwaggerDefaultValues">
             <summary>

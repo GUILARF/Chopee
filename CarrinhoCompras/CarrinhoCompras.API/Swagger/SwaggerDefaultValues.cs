@@ -1,4 +1,3 @@
-
 namespace CarrinhoCompras.API.Swagger
 {
     using Swashbuckle.AspNetCore.Swagger;

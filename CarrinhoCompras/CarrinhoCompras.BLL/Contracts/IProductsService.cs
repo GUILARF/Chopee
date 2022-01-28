@@ -1,5 +1,4 @@
 using CarrinhoCompras.BLL.Models;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -19,7 +18,7 @@ namespace CarrinhoCompras.BLL.Contracts
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        Task<Product> GetProductAsync(Guid id);
+        Task<Product> GetProductAsync(long id);
 
         /// <summary>
         /// Update Product parameters
@@ -33,10 +32,10 @@ namespace CarrinhoCompras.BLL.Contracts
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        Task<bool> DeleteProductAsync(Guid id);
+        Task<bool> DeleteProductAsync(long id);
 
         /// <summary>
-        /// Get Products list 
+        /// Get Products list
         /// </summary>
         /// <param name="pageNumber"></param>
         /// <param name="pageSize"></param>

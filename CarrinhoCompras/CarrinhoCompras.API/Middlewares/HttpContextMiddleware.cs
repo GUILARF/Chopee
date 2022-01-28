@@ -12,14 +12,13 @@ namespace CarrinhoCompras.API.Middleware
 {
     public class HttpContextMiddleware
     {
-        const string MessageTemplate =
+        private const string MessageTemplate =
             "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms [User:{User}][Protocol:{RequestProtocol}][Host:{RequestHost}][Referer:{Referer}][User-Agent:{UserAgent}]";
 
-        const string ErrorMessageTemplate =
+        private const string ErrorMessageTemplate =
            "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms [User:{User}][Protocol:{RequestProtocol}][Host:{RequestHost}][Headers:{RequestHeaders}]";
 
-
-        readonly RequestDelegate _next;
+        private readonly RequestDelegate _next;
 
         public HttpContextMiddleware(RequestDelegate next)
         {
@@ -45,7 +44,7 @@ namespace CarrinhoCompras.API.Middleware
             catch (Exception ex)
             {
                 sw.Stop();
-                var errorId = Guid.NewGuid();
+                var errorId = long.MinValue;
                 httpContext.Response.ContentType = "application/json";
                 httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
@@ -56,7 +55,7 @@ namespace CarrinhoCompras.API.Middleware
             }
         }
 
-        private static void PushProperties(double elapsed, HttpContext httpContext, Guid? errorId = null)
+        private static void PushProperties(double elapsed, HttpContext httpContext, long? errorId = null)
         {
             var requestHeader = httpContext.Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToString());
             LogContext.PushProperty("Elapsed", elapsed);
@@ -73,5 +72,3 @@ namespace CarrinhoCompras.API.Middleware
         }
     }
 }
-
-

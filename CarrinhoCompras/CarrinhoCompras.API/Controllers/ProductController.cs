@@ -1,20 +1,18 @@
 using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using CarrinhoCompras.API.Models;
 using CarrinhoCompras.API.Swagger;
 using CarrinhoCompras.BLL.Contracts;
+using CarrinhoCompras.DAL.SQL.Context;
+using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using Swashbuckle.AspNetCore.Filters;
 using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using CarrinhoCompras.DAL.SQL.Context;
 
 namespace CarrinhoCompras.API.Controllers
 {
-    [Authorize]
     [Produces("application/json")]
     [Route("api/v{version:apiVersion}/products")]
     [ApiVersion("1.0")]
@@ -41,7 +39,7 @@ namespace CarrinhoCompras.API.Controllers
         /// Create a new product
         /// </summary>
         /// <param name="product"></param>
-        /// <returns>Returns created product</returns>           
+        /// <returns>Returns created product</returns>
         [HttpPost("")]
         [SwaggerResponseExample((int)HttpStatusCode.Created, typeof(ProductModelExample))]
         [SwaggerResponse((int)HttpStatusCode.Created, Type = typeof(Product), Description = "Returns created product")]
@@ -67,9 +65,9 @@ namespace CarrinhoCompras.API.Controllers
         [SwaggerResponseExample((int)HttpStatusCode.OK, typeof(ProductModelExample))]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid product id")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> GetproductAsync([FromRoute] Guid id)
+        public async Task<IActionResult> GetproductAsync([FromRoute] long id)
         {
-            if (id == Guid.Empty)
+            if (id < 0)
             {
                 return BadRequest();
             }
@@ -89,9 +87,9 @@ namespace CarrinhoCompras.API.Controllers
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid product object")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> UpdateproductAsync([FromRoute] Guid id, [FromBody] Product product)
+        public async Task<IActionResult> UpdateproductAsync([FromRoute] long id, [FromBody] Product product)
         {
-            if (id == Guid.Empty || !ModelState.IsValid)
+            if (id < 0 || !ModelState.IsValid)
             {
                 return BadRequest();
             }
@@ -110,9 +108,9 @@ namespace CarrinhoCompras.API.Controllers
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid product id")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> DeleteproductAsync([FromRoute] Guid id)
+        public async Task<IActionResult> DeleteproductAsync([FromRoute] long id)
         {
-            if (id == Guid.Empty)
+            if (id < 0)
             {
                 return BadRequest();
             }
